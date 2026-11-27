@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Arjhay Watcherman | Freelance Graphic Designer</title>
+<meta name="description" content="I help businesses, entrepreneurs, and individuals build a strong visual identity through customized graphic design and branding.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0E0E0C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230E0E0C'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%23C9A24B' font-family='Georgia,serif'%3EAW%3C/text%3E%3C/svg%3E">
+
+<!-- LINK PREVIEW TAGS: replace REPLACE-WITH-YOUR-SITE-ADDRESS once your site is online -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Arjhay Watcherman | Freelance Graphic Designer">
+<meta property="og:description" content="I help businesses, entrepreneurs, and individuals build a strong visual identity through customized graphic design and branding.">
+<meta property="og:image" content="https://REPLACE-WITH-YOUR-SITE-ADDRESS/images/og-image.jpg">
+<meta property="og:url" content="https://REPLACE-WITH-YOUR-SITE-ADDRESS/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* COLOURS AND FONTS: change them here and the whole page follows */
+:root{
+  --ink:#0E0E0C; --char:#1B1A17; --gold:#C9A24B; --ivory:#F3EDE0;
+  --soft:#D9D2C3; --taupe:#8C8574; --line:rgba(201,162,75,.35);
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Jost","Helvetica Neue",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--soft);font:400 1rem/1.7 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+h1,h2,h3,p,ul,ol{margin:0}
+p+p{margin-top:1rem}
+
+/* LAYOUT */
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 1.25rem}
+section{padding:4.5rem 0;border-top:1px solid var(--line)}
+.alt{background:var(--char)}
+.eyebrow{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem}
+h2{font-family:var(--serif);font-weight:300;color:var(--ivory);font-size:clamp(1.9rem,6vw,3rem);line-height:1.15;margin-bottom:1.5rem}
+h3{font-family:var(--serif);font-weight:500;color:var(--ivory);font-size:1.5rem;line-height:1.2;margin-bottom:.6rem}
+
+/* BUTTON AND FOCUS */
+.btn{display:inline-block;padding:.95rem 2rem;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;transition:background .3s,color .3s}
+.btn:hover{background:var(--gold);color:var(--ink)}
+a:focus-visible{outline:3px solid var(--ivory);outline-offset:4px}
+.cta{margin-top:2.5rem}
+
+/* HERO */
+.hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;border-top:0;padding:4rem 0}
+.name{font-family:var(--serif);font-weight:300;color:var(--ivory);text-transform:uppercase;letter-spacing:.06em;line-height:1;font-size:clamp(2.6rem,12vw,6.5rem)}
+.name span{display:block}
+.rule{width:64px;height:1px;background:var(--gold);margin:2rem 0}
+.hero h1{font-family:var(--serif);font-weight:400;font-style:italic;color:var(--ivory);font-size:clamp(1.6rem,5.5vw,2.6rem);line-height:1.2;max-width:22ch}
+.lead{max-width:34rem;margin:1.25rem 0 0}
+
+/* ABOUT */
+.big{font-family:var(--serif);font-size:clamp(1.35rem,4vw,1.9rem);line-height:1.4;color:var(--ivory);max-width:44rem}
+.about p{max-width:44rem}
+
+/* SKILLS */
+.cols{display:grid;gap:2.5rem}
+.list{list-style:none;padding:0}
+.list li{padding:.7rem 0;border-bottom:1px solid var(--line);color:var(--ivory)}
+
+/* SERVICES AND HOW I WORK */
+.cards{display:grid;gap:1.25rem;margin-top:2.5rem}
+.card{border:1px solid var(--line);padding:1.75rem;background:var(--ink)}
+.tag{display:inline-block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);background:var(--gold);padding:.2rem .6rem;margin-bottom:.9rem}
+
+/* SELECTED WORKS */
+.works{counter-reset:w;margin-top:2rem}
+.work{counter-increment:w;display:grid;gap:1.75rem;padding:3rem 0;border-top:1px solid var(--line)}
+.info::before{content:counter(w,decimal-leading-zero);display:block;font-family:var(--serif);font-weight:300;font-size:2.2rem;line-height:1;color:var(--gold);margin-bottom:1rem}
+.case p{margin-top:.9rem}
+.case b{display:block;font-weight:500;font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold)}
+/* IMAGE BOX: a drawn placeholder shows until the real file is in images/ */
+.shot{position:relative;height:0;padding-top:75%;margin:8px;background:#23211C;outline:1px solid var(--line);outline-offset:8px}
+.shot::after{content:attr(data-file);position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;padding:1rem;font-size:.8rem;letter-spacing:.15em;color:var(--taupe);opacity:.6}
+.shot img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0;z-index:1;transition:opacity .6s}
+.shot img.ok{opacity:1}
+
+/* PROCESS */
+.steps{list-style:none;padding:0;margin-top:2.5rem;display:grid;gap:2rem;counter-reset:s}
+.steps li{counter-increment:s;border-top:1px solid var(--line);padding-top:1.25rem}
+.steps li::before{content:counter(s,decimal-leading-zero);display:block;font-family:var(--serif);font-weight:300;font-size:2rem;line-height:1;color:var(--gold);margin-bottom:.75rem}
+
+/* CONTACT */
+.contact-list{list-style:none;padding:0;margin-top:1rem}
+.contact-list li{padding:.8rem 0;border-bottom:1px solid var(--line);color:var(--ivory)}
+.contact-list b{display:block;font-weight:500;font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;color:var(--taupe)}
+.contact-list a{color:var(--ivory);overflow-wrap:anywhere;text-decoration-color:var(--gold);text-underline-offset:4px}
+.closing{margin-top:2.5rem;font-family:var(--serif);font-style:italic;font-size:1.5rem;line-height:1.3;color:var(--ivory)}
+
+/* BIGGER SCREENS */
+@media(min-width:720px){
+  .wrap{padding:0 2rem}
+  section{padding:6rem 0}
+  .cols,.cards,.steps{grid-template-columns:1fr 1fr}
+  .span{grid-column:1/-1}
+  .work{grid-template-columns:1fr 1fr;align-items:center;gap:3.5rem}
+  .work:nth-of-type(even) .shot{order:2}
+}
+
+/* MOTION: one gentle fade on the hero, switched off for people who ask for less motion */
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.fade{animation:fade 1.1s ease both}
+@media(prefers-reduced-motion:reduce){.fade{animation:none}.btn,.shot img{transition:none}}
+</style>
+</head>
+
+<body>
+<main>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="wrap fade">
+    <p class="eyebrow">Freelance Graphic Designer</p>
+    <p class="name"><span>Arjhay</span><span>Watcherman</span></p>
+    <div class="rule"></div>
+    <h1>Your Ideas, Turned Into Professional Designs.</h1>
+    <p class="lead">I help businesses, entrepreneurs, and individuals build a strong visual identity through customized graphic design and branding.</p>
+    <p class="cta"><a class="btn" href="mailto:arjhaywatcherman@gmail.com?subject=Start%20Your%20Project">Start Your Project</a></p>
+  </div>
+</section>
+
+<!-- 2. ABOUT -->
+<section class="about alt" aria-label="About">
+  <div class="wrap">
+    <p class="eyebrow">About</p>
+    <p class="big">I help businesses, entrepreneurs, and individuals build a professional visual identity through customized graphic design and branding.</p>
+    <p>My goal is to turn your ideas into designs that reflect your identity, style, and preferences. Whether you need branding, custom graphics, or visual materials, I aim to create designs that match your vision.</p>
+  </div>
+</section>
+
+<!-- 3. SKILLS AND TOOLS -->
+<section aria-label="Skills and Tools">
+  <div class="wrap">
+    <p class="eyebrow">Skills and Tools</p>
+    <div class="cols">
+      <div>
+        <h3>My Design Skills</h3>
+        <ul class="list">
+          <li>Custom Graphic Design</li>
+          <li>Branding and Visual Identity</li>
+          <li>Logo Design</li>
+          <li>Apparel Design</li>
+          <li>Marketing Materials</li>
+          <li>Social Media Graphics</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Design Tools</h3>
+        <ul class="list">
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
+        </ul>
+      </div>
+      <div class="span">
+        <h3>My Design Approach: Customized &amp; Versatile</h3>
+        <p>I create designs based on your ideas, needs, and preferences. Each project is approached with your creative direction and intended purpose in mind.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. SERVICES -->
+<section class="alt" aria-label="Services">
+  <div class="wrap">
+    <p class="eyebrow">Services</p>
+    <div class="cards" style="margin-top:0">
+      <div class="card">
+        <span class="tag">Main Service</span>
+        <h3>Professional Brand Identity</h3>
+        <p>I create customized visual designs that help your business or personal brand express its identity. You receive designs that reflect your ideas, style, and brand preferences.</p>
+      </div>
+      <div class="card">
+        <h3>Recognizable Logo Designs</h3>
+        <p>I create custom logos based on your brand concept. You receive a visual identity that represents your business, organization, or personal brand.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Apparel Designs</h3>
+        <p>I design graphics for polo shirts, jerseys, and T-shirts. You receive customized apparel designs based on your preferred colors and style.</p>
+      </div>
+      <div class="card">
+        <h3>Eye-Catching Marketing Materials</h3>
+        <p>I create banners, labels, and social media graphics. You receive visual materials ready for your marketing and promotional needs.</p>
+      </div>
+    </div>
+    <p class="cta"><a class="btn" href="mailto:arjhaywatcherman@gmail.com?subject=Start%20Your%20Project">Start Your Project</a></p>
+  </div>
+</section>
+
+<!-- 5. SELECTED WORKS -->
+<section aria-label="Selected Works">
+  <div class="wrap">
+    <p class="eyebrow">Selected Works</p>
+    <div class="works">
+
+      <div class="work">
+        <div class="shot" data-file="work-lion-logo.jpg">
+          <img src="images/work-lion-logo.jpg" width="1200" height="900" loading="lazy" alt="BSBA Financial Management Lion Head Logo Concept">
+        </div>
+        <div class="info case">
+          <h3>BSBA Financial Management Lion Head Logo Concept</h3>
+          <p><b>Problem:</b> Create a recognizable identity for a Financial Management organization.</p>
+          <p><b>What I did:</b> Designed a realistic lion-head logo concept.</p>
+          <p><b>Result:</b> A visual identity representing strength, leadership, and professionalism.</p>
+          <p><b>Tools:</b> Adobe Photoshop and Adobe Illustrator.</p>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="shot" data-file="work-polo-shirt.jpg">
+          <img src="images/work-polo-shirt.jpg" width="1200" height="900" loading="lazy" alt="Custom Apparel and Polo Shirt Design">
+        </div>
+        <div class="info case">
+          <h3>Custom Apparel and Polo Shirt Design</h3>
+          <p><b>Problem:</b> Create apparel graphics that communicate identity and professionalism.</p>
+          <p><b>What I did:</b> Developed custom polo shirt designs with white-and-green and inverted color variations.</p>
+          <p><b>Result:</b> Customized apparel concepts with alternative color treatments.</p>
+          <p><b>Tools:</b> Adobe Photoshop and Adobe Illustrator.</p>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="shot" data-file="work-pl-gym-logo.jpg">
+          <img src="images/work-pl-gym-logo.jpg" width="1200" height="900" loading="lazy" alt="PL Gym Logo Design">
+        </div>
+        <div class="info case">
+          <h3>PL Gym Logo Design</h3>
+          <p><b>Problem:</b> Create a simple yet luxurious gym identity.</p>
+          <p><b>What I did:</b> Developed a PL monogram with a black-and-yellow color scheme.</p>
+          <p><b>Result:</b> A gym logo concept representing strength and a premium look.</p>
+          <p><b>Tools:</b> Adobe Photoshop and Adobe Illustrator.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 6. DESIGN PROCESS -->
+<section class="alt" aria-label="Design Process">
+  <div class="wrap">
+    <p class="eyebrow">Design Process</p>
+    <ol class="steps" style="margin-top:0">
+      <li><h3>Project Discovery</h3><p>You share your ideas, goals, design preferences, and project requirements so I can understand what you need.</p></li>
+      <li><h3>Creative Planning</h3><p>I develop a design concept based on your vision, preferred style, and brand identity.</p></li>
+      <li><h3>Design Refinement</h3><p>I create your design and make the needed revisions based on your feedback.</p></li>
+      <li><h3>Final Delivery</h3><p>I provide your completed design in the agreed file format and resolution.</p></li>
+    </ol>
+    <p class="cta"><a class="btn" href="mailto:arjhaywatcherman@gmail.com?subject=Start%20Your%20Project">Start Your Project</a></p>
+  </div>
+</section>
+
+<!-- 7. HOW I WORK WITH YOU -->
+<section aria-labelledby="how">
+  <div class="wrap">
+    <h2 id="how">How I Work With You</h2>
+    <p class="big">Every project starts with your ideas. I take time to understand your needs, listen to your preferences, and create designs that match your vision.</p>
+    <div class="cards">
+      <div class="card"><h3>Your Ideas Matter</h3><p>I consider your goals, preferences, and creative direction.</p></div>
+      <div class="card"><h3>Open Communication</h3><p>I listen to your feedback throughout the design process.</p></div>
+      <div class="card"><h3>Design Revisions</h3><p>I make necessary revisions based on your feedback and agreed requirements.</p></div>
+      <div class="card"><h3>Customized Results</h3><p>I create designs that reflect your project’s identity and purpose.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CONTACT -->
+<section class="alt" aria-labelledby="contact">
+  <div class="wrap">
+    <h2 id="contact">Let’s Bring Your Ideas to Life.</h2>
+    <p class="big">Have a project in mind? Let’s talk about your ideas and create a design that fits your vision.</p>
+    <p class="cta"><a class="btn" href="mailto:arjhaywatcherman@gmail.com?subject=Start%20Your%20Project">Start Your Project</a></p>
+    <h3 style="margin-top:3.5rem">Get in Touch</h3>
+    <ul class="contact-list">
+      <li><b>Gmail</b><a href="mailto:arjhaywatcherman@gmail.com">arjhaywatcherman@gmail.com</a></li>
+      <li><b>Facebook Messenger</b><a href="https://www.facebook.com/profile.php?id=61597001068447" target="_blank" rel="noopener">Facebook Messenger</a></li>
+      <li><b>Instagram</b>Arjhay Watcherman</li>
+      <li><b>Discord</b><a href="https://discord.com/users/1573849882056458301" target="_blank" rel="noopener">Discord</a></li>
+      <li><b>Location</b>Concepcion, Tarlac, Philippines</li>
+    </ul>
+    <p class="closing">Let’s create something that represents your ideas.</p>
+  </div>
+</section>
+
+</main>
+
+<script>
+/* Shows each work image only after the real file has loaded.
+   If the file is missing, the drawn placeholder stays visible. */
+(function () {
+  var imgs = document.querySelectorAll('.shot img');
+  for (var i = 0; i < imgs.length; i++) {
+    (function (img) {
+      function ok() { if (img.naturalWidth > 0) { img.className = 'ok'; } }
+      img.addEventListener('load', ok);
+      if (img.complete) { ok(); }
+    })(imgs[i]);
+  }
+})();
+</script>
+</body>
+</html>
